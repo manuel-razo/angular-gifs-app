@@ -1,2 +1,10 @@
+<!--
+    Angular tiene muchas maneras de manipular el DOM, ya sea mediante 
+    manipulación directa o como en este caso durante los eventos.
+    
+     #txtBuscar es una etiqueta que permite manipulación de las propiedades
+     del input cuando se llama a la función "buscar()" durante el evento
+     (keyup.enter) a través de un ViewChild en el archivo ts.
+-->
 <h5>Buscar:</h5>
 <input type="text" class="form-control" placeholder="Buscar gifs..." (keyup.enter)="buscar()" #txtBuscar>

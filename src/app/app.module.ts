@@ -6,6 +6,10 @@ import { AppComponent } from './app.component';
 import { GifsModule } from './gifs/gifs.module';
 import { SharedModule } from './shared/shared.module';
 
+/**
+ * Cada vez que necesitemos un módulo en nuestra aplicación 
+ * debe ser declarado en la seccion de imports.
+ */
 @NgModule({
   declarations: [
     AppComponent

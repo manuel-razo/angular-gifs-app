@@ -2,6 +2,13 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Gif, SearchGifsResponse } from '../interfaces/gifs.interfaces';
 
+/**
+ * Injectable es una propiedad que permite al servicio ser utilizado 
+ * como tal en la aplicación. Este servicio fue declarado en el arreglo
+ * de proveedores en el archivo app.module.ts por lo que para poder ser 
+ * utilizado sin volver a llamarlo se debe especificar que fue proporcionado
+ * en el módulo principal.
+ */
 @Injectable({
   providedIn: 'root'
 })
@@ -27,6 +34,10 @@ export class GifsService {
     } */
   }
 
+  /**
+   * Las consultas HTTP pueden ser de distintos métodos y se recomienda
+   * separar la URL y los parámetros para tener buena legibilidad.
+   */
   buscarGifs(query: string = '') {
 
     query = query.trim().toLowerCase();
